@@ -93,6 +93,14 @@ function getFileName(): string {
     }
 }
 
+/**
+ * Resets Filters and Selected Array
+ */
+function resetFilters() {
+    filteredEvents = undefined;
+    selected = [false,false,false];
+}
+
 /*---- Main Program ----*/
 
 // Reads in events from file
@@ -125,8 +133,7 @@ while (running) {
             }
             // Clear Filters
             case 'c': {
-                filteredEvents = undefined;
-                selected = [false,false,false];
+                resetFilters();
                 break;
 
             }
@@ -142,6 +149,7 @@ while (running) {
                 else if (filteredEvents.length === 0) {
                     console.error('No Events Found with Current Filters. Please try again.');
                     prompt('Press Enter to Continue');
+                    resetFilters();
 
 
                 } 
