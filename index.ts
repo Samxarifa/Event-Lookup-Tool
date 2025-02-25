@@ -149,7 +149,7 @@ while (running) {
                 else {
                     running = false;
                     // Displays filtered events in table
-                    console.table(events.map((event) => {
+                    console.table(filteredEvents.map((event) => {
                         return {
                             'Event Type': event.eventType,
                             'Entity Name': event.entityName,
@@ -240,6 +240,11 @@ while (running) {
     
                 break;
 
+            }
+            // Invalid Input
+            default: {
+                console.error('Invalid Input. Please try again.');
+                prompt('Press Enter to Continue');
             }
         }
     }
