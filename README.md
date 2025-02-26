@@ -1,4 +1,4 @@
-# Kyloe Event Lookup Tool
+# Event Lookup Tool
 To run:
 
 ```bash
