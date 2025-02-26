@@ -1,5 +1,5 @@
 {
-  "name": "attempt1",
+  "name": "event-lookup-tool",
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
