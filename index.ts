@@ -38,11 +38,11 @@ async function readFromFile(fileName: string): Promise<Event[]> {
     const events: Event[] = [];
     data.split('\n').forEach((line) => {
         // Replaces commas in fieldsUpdated Array with semicolons to prevent splitting (using regex)
-        line = line.replace(/\[(.*?)\]/, (_, content) => {
-            return content.replace(/, /g, ';');
+        line = line.replace(/\[(.*)\]/, (_, content: string) => {
+            return content.replace(/, ?/g, ';');
         });
         // Splits line into array of values
-        const splitLine = line.split(', ');
+        const splitLine = line.split(/, ?/g);
         // Checks if line has correct number of values
         if (splitLine.length !== 5) {
             console.error('Events File is in an Invalid Format. Please check the file and try again.');
