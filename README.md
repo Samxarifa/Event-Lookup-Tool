@@ -1,6 +1,5 @@
 # Event Lookup Tool
-To setup:
-
+To setup (Have the latest [Bun](https://bun.sh) version installed):
 ```bash
 bun install
 ```
@@ -11,4 +10,4 @@ To run:
 bun run index.ts
 ```
 
-This project was created using `bun init` in bun v1.2.2. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+This project was created in bun v1.2.2. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
