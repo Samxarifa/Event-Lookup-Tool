@@ -1,4 +1,10 @@
 # Event Lookup Tool
+To setup:
+
+```bash
+bun install
+```
+
 To run:
 
 ```bash
