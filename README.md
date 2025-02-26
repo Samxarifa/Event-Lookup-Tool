@@ -1,11 +1,4 @@
-# attempt1
-
-To install dependencies:
-
-```bash
-bun install
-```
-
+# Kyloe Event Lookup Tool
 To run:
 
 ```bash
